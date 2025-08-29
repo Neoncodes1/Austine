@@ -1,139 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>school project</title>
+<head>
+  <title>School Project</title>
   <style>
     body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: arial, sans-serif;
-  display: flex;                
-  flex-direction: column;     
-  align-items: center;
-  width: 100%;               
-footer {
-  background-color: #102542;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  width: 100%;               
-}
-header {
-  background-color: #102542;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  width: 100%;               
-}
-nav {
-  background-color: #f0edcc;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  width: 100%;                
-}
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  width: 100%;                
-}
-img {
-  border: none;
-  width: 180px;
-}
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #102542;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      width: 100%;
+    }
+
+    nav {
+      background-color: #f0edcc;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      width: 100%;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      max-width: 800px; /* keeps content from being too wide */
+      width: 100%;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    img {
+      border: none;
+      width: 180px;
+    }
+
+    footer {
+      background-color: #102542;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: aliceblue;
+      border-radius: 15px;
+      font-size: 18px;
+      padding: 5px 15px;
+    }
+
+    textarea, input {
+      width: 100%;
+      max-width: 300px;
+    }
   </style>
-  </head>
-  <body>
-    <header>
-      <h1>ONTRACK CONSULT</h1>
-    </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main>
-      <img src="https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/university_of_benin.png?itok=IwvcUadP"alt="Uniben Logo"
-      <h2 style="color: #102542; font-size: 35px; font-style: impact;">ADMISSION CONSOLT</h2>
-      <h3>Available Departmental Courses </h3>
-      <table border="1" style="background-color: #f0edcc">
-        <tr align="center">
-        <th width="100">ART</th>
-        <th width="100">ENGINEERING</th>
-        <th width="100">MANAGEMENT SCIENCE</th>
-        <th width="100">SCIENCE</th>
-        </tr>
-        <tr align="center" style="background-color: aliceblue;">
-          <td>ENGLISH</td>
-          <td>CHEMICAL ENGINEERING</td>
-          <td>ACCOUNTING</td>
-          <td>BIO-CHEMISTRY</td>
-        </tr>
-        <tr align="center" style="background-color: aliceblue">
-          <td>FRENCH</td>
-          <td>CIVIL ENGINEERING</td>
-          <td>BUSINESS ADMINISTRATION</td>
-          <td>BOTANY</td>
-        </tr>
-        <tr align="center" style="background-color: aliceblue">
-          <td>LINGUISTICS</td>
-          <td>INDUSTRIAL ENGINEERING</td>
-          <td>BANKING & FINANCE</td>
-          <td>CHEMISTRY</td>
-        </tr>
-        <tr align="center" style="background-color: aliceblue">
-          <td>MUSIC</td>
-          <td>MECHANIC ENGINEERING</td>
-          <td>INDUSTRIAL RELATIONS</td>
-          <td>COMPUTER SCIENCE</td>
-        </tr>
-      </table>
-      <br>
-      <button style="background-color:alice aliceblue;">Click Below⬇️</button>
-      <a href="https://wa.me/+2347048784841"
-      title="Goes to WhatsApp">For more information</a><br>
-      <ph><b>MENTORSHIP & CONSULTANCY</b></ph><br>
-      <h2><b><u>FOR POST UTME APPLICANTS</u></b></h2>
-      <ph><b>What you'll get</b></ph>
-      <ul>
-        <li>CAREER & ADMISSION COUNSELLING</li>
-        <li>ONLINE SEMINARS</li>
-        <li>REGULAR CHECK-INS & FOLLOW-UPS</li>
-        <li>PERSONALIZED MENTORSHIP</li>
-        <li>EXPERT ADVICE ON THE EXAMINATION PROCESS</li>
-        <li>GUIDANCE ON COURSE SELECTION & DEPARTMENTAL COURT OFF MARKS</li>
-      </ul>
-      <ph><b>ONE TIME PAYMENT: N5,000</b></ph>
-      <img src="https://consultwithibs.com/wp-content/uploads/2024/10/Best-Consulting-Services-for-School-Admissions.jpeg"alt="uniben logo"
-      height="100"><br>
-      <ph>Let's get you started!</ph>
-      <h4>APPLICATION FORM FOR 2025/2026 ACADEMIC SESSION</h4>
-      <form action="#">
-        <label for="name">Name:</label><br>
-      <textarea id="name" placeholder="Your" required></textarea><br>
-      <form action="#">
+</head>
+<body>
+  <header>
+    <h1>ONTRACK CONSULT</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <img src="https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/university_of_benin.png?itok=IwvcUadP" alt="Uniben Logo">
+    <h2 style="color:#102542; font-size:35px; font-family:impact;">ADMISSION CONSOLT</h2>
+
+    <h3>Available Departmental Courses</h3>
+    <table>
+      <tr>
+        <th>ART</th>
+        <th>ENGINEERING</th>
+        <th>MANAGEMENT SCIENCE</th>
+        <th>SCIENCE</th>
+      </tr>
+      <tr>
+        <td>ENGLISH</td>
+        <td>CHEMICAL ENGINEERING</td>
+        <td>ACCOUNTING</td>
+        <td>BIO-CHEMISTRY</td>
+      </tr>
+      <tr>
+        <td>FRENCH</td>
+        <td>CIVIL ENGINEERING</td>
+        <td>BUSINESS ADMINISTRATION</td>
+        <td>BOTANY</td>
+      </tr>
+      <tr>
+        <td>LINGUISTICS</td>
+        <td>INDUSTRIAL ENGINEERING</td>
+        <td>BANKING & FINANCE</td>
+        <td>CHEMISTRY</td>
+      </tr>
+      <tr>
+        <td>MUSIC</td>
+        <td>MECHANIC ENGINEERING</td>
+        <td>INDUSTRIAL RELATIONS</td>
+        <td>COMPUTER SCIENCE</td>
+      </tr>
+    </table>
+
+    <br>
+    <button>Click Below⬇️</button>
+    <a href="https://wa.me/+2347048784841" title="Goes to WhatsApp">For more information</a><br><br>
+
+    <p><b>MENTORSHIP & CONSULTANCY</b></p>
+    <h2><u>FOR POST UTME APPLICANTS</u></h2>
+    <p><b>What you'll get</b></p>
+    <ul>
+      <li>CAREER & ADMISSION COUNSELLING</li>
+      <li>ONLINE SEMINARS</li>
+      <li>REGULAR CHECK-INS & FOLLOW-UPS</li>
+      <li>PERSONALIZED MENTORSHIP</li>
+      <li>EXPERT ADVICE ON THE EXAMINATION PROCESS</li>
+      <li>GUIDANCE ON COURSE SELECTION & DEPARTMENTAL COURT OFF MARKS</li>
+    </ul>
+
+    <p><b>ONE TIME PAYMENT: N5,000</b></p>
+    <img src="https://consultwithibs.com/wp-content/uploads/2024/10/Best-Consulting-Services-for-School-Admissions.jpeg" alt="consulting" height="100"><br>
+    <p>Let's get you started!</p>
+
+    <h4>APPLICATION FORM FOR 2025/2026 ACADEMIC SESSION</h4>
+    <form action="#">
+      <label for="name">Name:</label><br>
+      <input id="name" type="text" placeholder="Your name" required><br><br>
+
       <label for="Number">Phone Number:</label><br>
-      <textarea id="Number" placeholder="+123-456-7890" required></textarea><br>
-      <form action="#">
-        <label for="email">Email:</label><br>
-        <textarea id="email" placeholder="example@gmail.com" required></textarea><br><br>
-      Gender<br>
-      <input type="radio" name="question" value="Male"> Male
-      <input type="radio" name="question" value="Female"> Female<br><br>
-      
-      <input type="checkbox"> I agree to allow my info be accessed by onTRACK consultancy<br><br>
-         <button style="background-color:alice aliceblue; border-radius:15px; font-size: 18px">Submit</button>
-      <hr>
-      <footer>
-        Developer: Austine<br>
-        &copy;copyright reserved<br>
-        <small><a href="mailto: sundayaugustine121@gmail.com">Reach out</a></small>
-      </footer>
+      <input id="Number" type="text" placeholder="+123-456-7890" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" type="email" placeholder="example@gmail.com" required><br><br>
+
+      Gender:<br>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female<br><br>
+
+      <input type="checkbox" required> I agree to allow my info be accessed by onTRACK consultancy<br><br>
+
+      <button type="submit">Submit</button>
     </form>
-    </main>
-  </body>
+  </main>
+
+  <footer>
+    Developer: Austine<br>
+    &copy; copyright reserved<br>
+    <small><a href="mailto:sundayaugustine121@gmail.com" style="color:white;">Reach out</a></small>
+  </footer>
+</body>
 </html>
