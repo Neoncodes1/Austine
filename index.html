@@ -3,7 +3,7 @@
 <head>
   <title>School Project</title>
   <style>
-    body {
+   /* body {
       margin: 0;
       padding: 0;
       background-color: white;
@@ -34,7 +34,7 @@
       flex-direction: column;
       align-items: center;
       padding: 10px;
-      max-width: 800px; /* keeps content from being too wide */
+      max-width: 800px;
       width: 100%;
     }
 
@@ -77,7 +77,89 @@
 
     textarea, input {
       width: 100%;
-      max-width: 300px;
+      max-width: 300px;*/
+    body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Full width header, nav, main, footer */
+header, nav, main, footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #102542;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background-color: #f0edcc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+main {
+  padding: 15px;
+}
+
+footer {
+  background-color: #102542;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;   /* remove left/right gaps */
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Images */
+img {
+  border: none;
+  max-width: 100%;   /* responsive */
+  height: auto;
+}
+
+/* Form */
+form {
+  width: 100%;
+  max-width: 100%;  /* no squeeze in middle */
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: aliceblue;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
     }
   </style>
 </head>
