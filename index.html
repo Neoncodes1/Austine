@@ -3,42 +3,48 @@
   <head>
     <title>school project</title>
   <style>
-    body{
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      background-color: white;
-      font-family: arial, sans-serif;
-    }
-   footer{
-      background-color: #102542;
-      color: white;
-      text-align: center;
-      padding: 5px;
-    }
-    header{
-      background-color: #102542;
-      color: white;
-      text-align: center;
-      padding: 5px;
-    }
-    nav{
-      background-color: #f0edcc;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-    }
-    main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 5px;
-    }
-    img{
-      border: none;
-      width: 180px;
-    }
+    body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: arial, sans-serif;
+  display: flex;              /* make body a flex container */
+  flex-direction: column;     /* stack elements vertically */
+  align-items: center;        /* center all content horizontally */
+}
+footer {
+  background-color: #102542;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;                /* stretch footer full width */
+}
+header {
+  background-color: #102542;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;                /* stretch header full width */
+}
+nav {
+  background-color: #f0edcc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;                /* make nav span full width */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;                /* optional: keep main full width */
+}
+img {
+  border: none;
+  width: 180px;
+}
   </style>
   </head>
   <body>
